@@ -50,7 +50,7 @@ public class DaySchool {
         LocalTime time = LocalTime.of(8, 0);
         for (int i = 0; i <= 6; i++) {
             Sessions = Arrays.copyOf(Sessions, Sessions.length + 1);
-            Sessions[Sessions.length - 1] = new Session(i, LocalTime.of(time.getHour() + i, 0), Assignment2.EntityManager.Tutors[i % 2].GetID());
+            Sessions[Sessions.length - 1] = new Session(i, LocalTime.of(time.getHour() + i, 0), Assignment2.EntityManager.Tutors[i % 3].GetID());
         }
     }
 }

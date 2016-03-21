@@ -8,7 +8,7 @@ public class DaySchoolManager {
 
     public DaySchool GetDaySchoolByDate(LocalDate date){
         for (DaySchool daySchool: DaySchools){
-            if (daySchool.GetDate() == date){
+            if (daySchool.GetDate().equals(date)){
                 return daySchool;
             }
         }
@@ -17,7 +17,7 @@ public class DaySchoolManager {
 
     public DaySchool GetDaySchoolByTheme(String theme) {
         for (DaySchool daySchool: DaySchools){
-            if (daySchool.GetTheme() == theme){
+            if (daySchool.GetTheme().equals(theme)){
                 return daySchool;
             }
         }
