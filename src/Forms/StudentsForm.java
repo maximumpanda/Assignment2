@@ -3,86 +3,65 @@ package Forms;
 import Main.Assignment2;
 import Main.Student;
 
-import javax.swing.*;
+import javax.swing.DefaultListModel;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import java.awt.event.*;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 
-public class StudentsForm extends EntityInspectFramework {
+class StudentsForm extends EntityInspectFramework {
 
-    private AddUpdateStudentForm addUpdateStudentForm = null;
+    private EditEntityFramework addUpdateStudentForm = null;
 
     public StudentsForm(){
-        this.InitializeEntityInspectFramework();
+        this.initializeEntityInspectFramework();
     }
 
     @Override
-    public void AdditionalListeners() {
-        this.addWindowFocusListener(new WindowFocusListener() {
-            @Override
-            public void windowGainedFocus(WindowEvent e) {
-                if (addUpdateStudentForm == null || !addUpdateStudentForm.isVisible()){
-                    DefaultListModel<String> listModel = new DefaultListModel<String>();
-                    for (Student student : Assignment2.EntityManager.Students){
-                        listModel.addElement(student.GetName());
-                    }
-                    EntityList.setModel(listModel);
-                }
-                else {
-                    addUpdateStudentForm.toFront();
-                }
-            }
-
-            @Override
-            public void windowLostFocus(WindowEvent e) {
-
-            }
-        });
-    }
-
-    @Override
-    public void PopulateEntityList() {
-        DefaultListModel<String> listValues = new DefaultListModel<String>();
-        for (Student student: Assignment2.EntityManager.Students){
-            listValues.addElement(student.GetName());
+    public void populateEntityList() {
+        DefaultListModel<String> listValues = new DefaultListModel<>();
+        for (Student student: Assignment2.entityManager.students){
+            listValues.addElement(student.getName());
         }
-        EntityList.setModel(listValues);
+        entityList.setModel(listValues);
     }
 
     @Override
-    public void TextBoxListeners() {
-        SearchTextBox.getDocument().addDocumentListener(new DocumentListener() {
+    public void textBoxListeners() {
+        searchTextBox.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                String IDPartial = SearchTextBox.getText();
-                DefaultListModel listModel = new DefaultListModel();
+                String IDPartial = searchTextBox.getText();
+                DefaultListModel<String> listModel = new DefaultListModel<>();
                 if (IDPartial.length() >= 1) {
-                    for (Student student : Assignment2.EntityManager.Students) {
-                        if (student.GetID().contains(IDPartial)) listModel.addElement(student.GetName());
+                    for (Student student : Assignment2.entityManager.students) {
+                        if (student.getID().contains(IDPartial)) listModel.addElement(student.getName());
                     }
                 }
-                EntityList.setModel(listModel);
-                EntityList.repaint();
+                entityList.setModel(listModel);
+                entityList.repaint();
             }
             @Override
             public void removeUpdate(DocumentEvent e) {
-                String IDPartial = SearchTextBox.getText();
-                DefaultListModel listModel = new DefaultListModel();
+                String IDPartial = searchTextBox.getText();
+                DefaultListModel<String> listModel = new DefaultListModel<>();
                 if (IDPartial.length() == 0) {
-                    for (Student student : Assignment2.EntityManager.Students) {
-                        listModel.addElement(student.GetName());
+                    for (Student student : Assignment2.entityManager.students) {
+                        listModel.addElement(student.getName());
                     }
                 } else {
-                    for (Student student : Assignment2.EntityManager.Students) {
-                        if (student.GetID().contains(IDPartial)) {
-                            listModel.addElement(student.GetName());
+                    for (Student student : Assignment2.entityManager.students) {
+                        if (student.getID().contains(IDPartial)) {
+                            listModel.addElement(student.getName());
                         }
                     }
                 }
-                EntityList.setModel(listModel);
-                EntityList.repaint();
+                entityList.setModel(listModel);
+                entityList.repaint();
             }
 
             @Override
@@ -90,13 +69,13 @@ public class StudentsForm extends EntityInspectFramework {
 
             }
         });
-        SearchTextBox.addFocusListener(new FocusAdapter() {
+        searchTextBox.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
-                SearchTextBox.setText("");
+                searchTextBox.setText("");
             }
         });
-        SearchTextBox.addKeyListener(new KeyAdapter() {
+        searchTextBox.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
                 char c = e.getKeyChar();
@@ -109,35 +88,36 @@ public class StudentsForm extends EntityInspectFramework {
     }
 
     @Override
-    public void ListListener() {
-        EntityList.addListSelectionListener(e -> {
-            if (EntityList.getSelectedValue() != null) {
-                Student tempStudent = Assignment2.EntityManager.FindStudentByName(EntityList.getSelectedValue().toString());
-                this.EntityIDLabel.setText(tempStudent.GetID());
-                this.NameLabel.setText(tempStudent.GetName());
-                String[] splitAddress = tempStudent.GetAddress().split(", ");
-                this.AddressStreetLabel.setText(splitAddress[0] + ", " + splitAddress[1]);
-                this.AddressCityLabel.setText(splitAddress[3] + ", " + splitAddress[4]);
-                this.AddressCountryLabel.setText(splitAddress[5]);
-                if (tempStudent.GetSpecialNeedsStatus()) this.SpecialNeedsLabel.setText("Yes");
-                else this.SpecialNeedsLabel.setText("No");
-                DefaultListModel listValues = new DefaultListModel();
-                for (int x = 0; x < Assignment2.DaySchoolManager.DaySchools.length; x++) {
-                    for (int y = 0; y < 7; y++) {
-                        if (ArrayContainsInt(Assignment2.DaySchoolManager.DaySchools[x].Sessions[y].GetStudentIDs(), tempStudent.GetID())) {
-                            listValues.addElement(Assignment2.DaySchoolManager.DaySchools[x].GetDate().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")) +
-                                    " " + Assignment2.DaySchoolManager.DaySchools[x].Sessions[y].GetTime());
+    public void listListener() {
+        entityList.addListSelectionListener(e -> {
+            if (entityList.getSelectedValue() != null) {
+                Student tempStudent = Assignment2.entityManager.getStudentByName(entityList.getSelectedValue());
+                this.entityIDLabel.setText(tempStudent.getID());
+                this.nameLabel.setText(tempStudent.getName());
+                String[] splitAddress = tempStudent.getAddress().split(", ");
+                this.addressStreetLabel.setText(splitAddress[0] + ", " + splitAddress[1]);
+                this.addressCityLabel.setText(splitAddress[3] + ", " + splitAddress[4]);
+                this.addressCountryLabel.setText(splitAddress[5]);
+                if (tempStudent.GetSpecialNeedsStatus()) this.specialNeedsLabel.setText("Yes");
+                else this.specialNeedsLabel.setText("No");
+                DefaultListModel<String> listValues = new DefaultListModel<>();
+                for (int x = 0; x < Assignment2.daySchoolManager.daySchools.length; x++) {
+                    for (int y = 0; y < 6; y++) {
+                        if (arrayContainsInt(Assignment2.daySchoolManager.daySchools[x].sessions[y].getStudentIDs(), tempStudent.getID())) {
+                            listValues.addElement(Assignment2.daySchoolManager.daySchools[x].getDate().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")) +
+                                    " " + Assignment2.daySchoolManager.daySchools[x].sessions[y].getTime());
                         }
                     }
                 }
-                SessionList.setModel(listValues);
-                SessionList.repaint();
+                sessionList.setModel(listValues);
+                sessionList.repaint();
+                this.entitySessionsCountLabel.setText(Integer.toString(sessionList.getModel().getSize()));
             }
         });
     }
 
     @Override
-    public void AddEntityButtonFunction() {
+    public void addEntityButtonFunction() {
         if (this.addUpdateStudentForm == null || !this.addUpdateStudentForm.isVisible()){
             addUpdateStudentForm = new AddUpdateStudentForm();
             addUpdateStudentForm.setVisible(true);
@@ -146,14 +126,23 @@ public class StudentsForm extends EntityInspectFramework {
     }
 
     @Override
-    public void EditEntityButtonFunction() {
+    public void editEntityButtonFunction() {
         if (this.addUpdateStudentForm == null || !this.addUpdateStudentForm.isVisible()){
-            addUpdateStudentForm = new AddUpdateStudentForm(EntityIDLabel.getText());
+            addUpdateStudentForm = new AddUpdateStudentForm(entityIDLabel.getText());
             addUpdateStudentForm.setVisible(true);
         }
     }
 
-    private boolean ArrayContainsInt(final String[] array, String check){
+    @Override
+    DefaultListModel<String> windowFocusGainedUpdateList() {
+        DefaultListModel<String> listModel = new DefaultListModel<>();
+        for (Student student : Assignment2.entityManager.students){
+            listModel.addElement(student.getName());
+        }
+        return listModel;
+    }
+
+    private boolean arrayContainsInt(final String[] array, String check){
         return Arrays.stream(array).anyMatch(i -> i.equals(check));
     }
 }

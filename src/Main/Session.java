@@ -1,60 +1,68 @@
 package Main;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class Session {
-    private int SessionID;
-    private LocalTime Time;
-    private String TutorID = GenerateTutorId();
-    private String[] StudentIDs = GenerateStudents();
-
-    public Session(){}
+    private final int sessionID;
+    private final LocalTime time;
+    private String tutorID = generateTutorId();
+    private String[] studentIDs = generateStudents();
 
     public Session(int sessionID, LocalTime time, String tutorID){
-        this.SessionID = sessionID;
-        this.Time = time;
-        this.TutorID = tutorID;
-        GenerateStudents();
-        GenerateTutorId();
+        this.sessionID = sessionID;
+        this.time = time;
+        this.tutorID = tutorID;
+        generateStudents();
+        generateTutorId();
     }
 
-    int GetSessionID (){
-        return this.SessionID;
+    public int getID(){
+        return this.sessionID;
+    }
+    public LocalTime getTime() {
+        return this.time;
+    }
+    public String getTutorID(){
+        return this.tutorID;
+    }
+    public String[] getStudentIDs(){
+        return this.studentIDs;
+    }
+    public void removeStudentByID(String studentID){
+        List<String> list = new ArrayList<>();
+        for (String s: studentIDs){
+            if (!s.equals(studentID)) list.add(s);
+        }
+        studentIDs = new String[list.size()];
+        studentIDs = list.toArray(studentIDs);
+    }
+    public void addStudent(String newStudentID) {
+        if (!Arrays.asList(studentIDs).contains(newStudentID)) {
+            studentIDs = Arrays.copyOf(studentIDs, studentIDs.length + 1);
+            studentIDs[studentIDs.length - 1] = newStudentID;
+        }
+    }
+    public void setTutor(String newTutorID){
+        this.tutorID = newTutorID;
     }
 
-    public LocalTime GetTime() {
-        return this.Time;
-    }
-    public String GetTutorID(){
-        return this.TutorID;
-    }
-    public String[] GetStudentIDs(){
-        return this.StudentIDs;
-    }
-    void AddStudent(String newStudentID) {
-        StudentIDs = Arrays.copyOf(StudentIDs, StudentIDs.length + 1);
-        StudentIDs[StudentIDs.length - 1] = newStudentID;
-    }
-    void SetTutor(String newTutorID){
-        this.TutorID = newTutorID;
-    }
-
-    private String[] GenerateStudents(){
+    private String[] generateStudents(){
         Random rand = new Random();
         String[] studentIDs = {};
-        int count = rand.nextInt(Assignment2.EntityManager.Students.length) +1;
+        int count = rand.nextInt(Assignment2.entityManager.students.length) +1;
         for (int i =0; i <count; i++){
             studentIDs = Arrays.copyOf(studentIDs, studentIDs.length +1);
-            studentIDs[i] = Assignment2.EntityManager.Students[i].GetID();
+            studentIDs[i] = Assignment2.entityManager.students[i].getID();
         }
         return studentIDs;
     }
-
-    private String GenerateTutorId(){
+    private String generateTutorId(){
         Random rand = new Random();
-        int count = rand.nextInt(Assignment2.EntityManager.Tutors.length-1);
-        return Assignment2.EntityManager.FindTutorByID("T00" + Integer.toString(count +1)).GetID();
+        int count = rand.nextInt(Assignment2.entityManager.tutors.length-1);
+        return Assignment2.entityManager.getTutorByID("T00" + Integer.toString(count +1)).getID();
     }
 }

@@ -2,88 +2,121 @@ package Forms;
 
 import Main.Assignment2;
 
-import javax.swing.*;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.ListModel;
+import javax.swing.ListSelectionModel;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowFocusListener;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * Created by steven-pc on 3/20/2016.
- */
-public abstract class EntityInspectFramework extends JFrame {
-    public JPanel panel1;
-    public JList EntityList;
-    public JLabel AddressStreetLabel;
-    public JLabel AddressCityLabel;
-    public JLabel AddressCountryLabel;
-    public JLabel EntityIDLabel;
-    public JLabel NameLabel;
-    public JLabel SpecialNeedsLabel;
-    public JList SessionList;
-    public JLabel SessionDateLabel;
-    public JLabel SessionTimeLabel;
-    public JLabel SessionThemeLabel;
-    public JLabel SessionTutorLabel;
-    public JFormattedTextField SearchTextBox;
-    public JButton AddEntityBtn;
-    public JLabel SpecialNeedsLabelStatic;
-    public JLabel SessionTutorLabelStatic;
-    public JButton EditEntityBtn;
-    public JPanel EntityDetailsPanel;
-    public JPanel SessionDetailsPanel;
+abstract class EntityInspectFramework extends JFrame {
+    private JPanel panel1;
+    JList<String> entityList;
+    JLabel addressStreetLabel;
+    JLabel addressCityLabel;
+    JLabel addressCountryLabel;
+    JLabel entityIDLabel;
+    JLabel nameLabel;
+    JLabel specialNeedsLabel;
+    JList<String> sessionList;
+    private JLabel sessionDateLabel;
+    private JLabel sessionTimeLabel;
+    private JLabel sessionThemeLabel;
+    JLabel sessionTutorLabel;
+    JFormattedTextField searchTextBox;
+    private JButton addEntityBtn;
+    JLabel specialNeedsLabelStatic;
+    JLabel sessionTutorLabelStatic;
+    private JButton editEntityBtn;
+    JPanel entityDetailsPanel;
+    JPanel sessionDetailsPanel;
+    JLabel entitySessionsCountLabel;
 
-    public void InitializeEntityInspectFramework(){
+    EditEntityFramework editEntityForm = null;
+
+    void initializeEntityInspectFramework(){
         setContentPane(panel1);
         pack();
         this.setLocationRelativeTo(null);
-        AddEntityBtn.setMargin(new java.awt.Insets(1,1,1,1));
-        EntityList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        SessionList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        PopulateEntityList();
-        ListListener();
-        TextBoxListeners();
-        SelectionListener();
+        addEntityBtn.setMargin(new java.awt.Insets(1,1,1,1));
+        entityList.setCellRenderer(new WhiteGreyCellRenderer());
+        sessionList.setCellRenderer(new WhiteGreyCellRenderer());
+        entityList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        sessionList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        populateEntityList();
+        listListener();
+        textBoxListeners();
+        selectionListener();
         AddEntityBtnListener();
         EditEntityBtnListener();
-        AdditionalListeners();
-        EntityList.setSelectedIndex(0);
-        SessionList.setSelectedIndex(0);
+        windowFocusListener();
+        entityList.setSelectedIndex(0);
+        sessionList.setSelectedIndex(0);
     }
 
-    public abstract void AdditionalListeners();
+    abstract void populateEntityList();
 
-    public abstract void PopulateEntityList();
+    abstract void textBoxListeners();
 
-    public abstract void TextBoxListeners();
+    abstract void listListener();
 
-    public abstract void ListListener();
+    abstract void addEntityButtonFunction();
 
-    public abstract void AddEntityButtonFunction();
+    abstract void editEntityButtonFunction();
 
-    public abstract void EditEntityButtonFunction();
+    abstract DefaultListModel<String> windowFocusGainedUpdateList();
 
-    private void SelectionListener(){
-        SessionList.addListSelectionListener(e -> {
-            int index = SessionList.getSelectedIndex();
+    private void windowFocusListener(){
+        this.addWindowFocusListener(new WindowFocusListener() {
+            @Override
+            public void windowGainedFocus(WindowEvent e) {
+                if (editEntityForm == null || !editEntityForm.isVisible()){
+                    int indexPosition = entityList.getSelectedIndex();
+                    entityList.setModel(windowFocusGainedUpdateList());
+                    entityList.setSelectedIndex(indexPosition);
+                }
+                else {
+                    editEntityForm.toFront();
+                }
+            }
+
+            @Override
+            public void windowLostFocus(WindowEvent e) {
+
+            }
+        });
+    }
+
+    private void selectionListener(){
+        sessionList.addListSelectionListener(e -> {
+            int index = sessionList.getSelectedIndex();
             if (index == -1){
                 index = 0;
-                SessionList.setSelectedIndex(index);
+                sessionList.setSelectedIndex(index);
             }
-            ListModel model = SessionList.getModel();
+            ListModel model = sessionList.getModel();
             if (model.getSize() >= index +1) {
                 String text = model.getElementAt(index).toString();
                 String[] dateSplit = text.split(" ");
                 LocalDate date = LocalDate.parse(dateSplit[0], DateTimeFormatter.ofPattern("MM/dd/yyyy"));
                 String[] timeSplit = dateSplit[1].split(":");
                 LocalTime time = LocalTime.of(Integer.parseInt(timeSplit[0]), Integer.parseInt(timeSplit[1]));
-                this.SessionDateLabel.setText(dateSplit[0]);
-                this.SessionTimeLabel.setText(dateSplit[1]);
+                this.sessionDateLabel.setText(dateSplit[0]);
+                this.sessionTimeLabel.setText(dateSplit[1]);
                 int daySchoolIndex = -1;
 
-                for (int x = 0; x < Assignment2.DaySchoolManager.DaySchools.length; x++) {
-                    LocalDate tempDate = Assignment2.DaySchoolManager.DaySchools[x].GetDate();
+                for (int x = 0; x < Assignment2.daySchoolManager.daySchools.length; x++) {
+                    LocalDate tempDate = Assignment2.daySchoolManager.daySchools[x].getDate();
                     if (tempDate.getDayOfMonth() == date.getDayOfMonth() && tempDate.getMonth() == date.getMonth() && tempDate.getYear() == date.getYear()) {
                         daySchoolIndex = x;
                         break;
@@ -91,26 +124,26 @@ public abstract class EntityInspectFramework extends JFrame {
                 }
                 if (daySchoolIndex != -1) {
                     int sessionIndex = -1;
-                    for (int y = 0; y < Assignment2.DaySchoolManager.DaySchools[daySchoolIndex].Sessions.length; y++) {
-                        if (Assignment2.DaySchoolManager.DaySchools[daySchoolIndex].Sessions[y].GetTime() == time) {
+                    for (int y = 0; y < Assignment2.daySchoolManager.daySchools[daySchoolIndex].sessions.length; y++) {
+                        if (Assignment2.daySchoolManager.daySchools[daySchoolIndex].sessions[y].getTime() == time) {
                             sessionIndex = y;
                             break;
                         }
                     }
                     if (sessionIndex != -1) {
-                        this.SessionThemeLabel.setText(Assignment2.DaySchoolManager.DaySchools[daySchoolIndex].GetTheme());
-                        this.SessionTutorLabel.setText(Assignment2.EntityManager.FindTutorByID(Assignment2.DaySchoolManager.DaySchools[daySchoolIndex].Sessions[sessionIndex].GetTutorID()).GetName());
+                        this.sessionThemeLabel.setText(Assignment2.daySchoolManager.daySchools[daySchoolIndex].getTheme());
+                        this.sessionTutorLabel.setText(Assignment2.entityManager.getTutorByID(Assignment2.daySchoolManager.daySchools[daySchoolIndex].sessions[sessionIndex].getTutorID()).getName());
                     } else {
-                        this.SessionDateLabel.setText("error");
-                        this.SessionTimeLabel.setText("error");
-                        this.SessionThemeLabel.setText("error");
-                        this.SessionTutorLabel.setText("error");
+                        this.sessionDateLabel.setText("error");
+                        this.sessionTimeLabel.setText("error");
+                        this.sessionThemeLabel.setText("error");
+                        this.sessionTutorLabel.setText("error");
                     }
                 } else {
-                    this.SessionDateLabel.setText("error");
-                    this.SessionTimeLabel.setText("error");
-                    this.SessionThemeLabel.setText("error");
-                    this.SessionTutorLabel.setText("error");
+                    this.sessionDateLabel.setText("error");
+                    this.sessionTimeLabel.setText("error");
+                    this.sessionThemeLabel.setText("error");
+                    this.sessionTutorLabel.setText("error");
                 }
             }
         });
@@ -118,18 +151,19 @@ public abstract class EntityInspectFramework extends JFrame {
     }
 
     private void AddEntityBtnListener(){
-        AddEntityBtn.addMouseListener(new MouseAdapter() {
+        addEntityBtn.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                AddEntityButtonFunction();
+                addEntityButtonFunction();
             }
         });
     }
 
     private void EditEntityBtnListener(){
-        EditEntityBtn.addMouseListener(new MouseAdapter() {
+        editEntityBtn.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {EditEntityButtonFunction();}
+            public void mouseClicked(MouseEvent e) {
+                editEntityButtonFunction();}
         });
     }
 

@@ -24,7 +24,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <grid id="452ed" binding="EntityDetailsPanel" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="452ed" binding="entityDetailsPanel" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -32,30 +32,17 @@
                 <properties/>
                 <border type="none"/>
                 <children>
-                  <vspacer id="65bcc">
-                    <constraints>
-                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                  </vspacer>
-                  <component id="43f26" class="javax.swing.JLabel" binding="EntityIDLabel">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <text value="ID:"/>
-                    </properties>
-                  </component>
                   <component id="d06d8" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Name"/>
                     </properties>
                   </component>
-                  <component id="7d78d" class="javax.swing.JTextField" binding="EntityNameTextBox">
+                  <component id="7d78d" class="javax.swing.JTextField" binding="entityNameTextBox">
                     <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
                         <preferred-size width="120" height="-1"/>
                       </grid>
                     </constraints>
@@ -65,15 +52,15 @@
                   </component>
                   <component id="c7338" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <text value="Address"/>
                     </properties>
                   </component>
-                  <component id="bbaa7" class="javax.swing.JTextArea" binding="EntityAddressArea">
+                  <component id="bbaa7" class="javax.swing.JTextArea" binding="entityAddressArea">
                     <constraints>
-                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
                         <preferred-size width="150" height="80"/>
                       </grid>
                     </constraints>
@@ -82,13 +69,33 @@
                       <wrapStyleWord value="true"/>
                     </properties>
                   </component>
-                  <component id="6073d" class="javax.swing.JCheckBox" binding="StudentHasSpecialNeedsCheckBox">
+                  <component id="6073d" class="javax.swing.JCheckBox" binding="studentHasSpecialNeedsCheckBox">
                     <constraints>
-                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
                       <selected value="false"/>
                       <text value="Student Has Special Needs?"/>
+                    </properties>
+                  </component>
+                  <component id="e7b7c" class="javax.swing.JTextField" binding="entityIDTextBox">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <editable value="true"/>
+                      <enabled value="true"/>
+                      <horizontalAlignment value="0"/>
+                    </properties>
+                  </component>
+                  <component id="5c06" class="javax.swing.JLabel" binding="entityIDLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="ID: "/>
                     </properties>
                   </component>
                 </children>
@@ -97,7 +104,7 @@
           </grid>
         </children>
       </grid>
-      <component id="a8889" class="javax.swing.JLabel" binding="ErrorLabel">
+      <component id="a8889" class="javax.swing.JLabel" binding="errorLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

@@ -6,37 +6,40 @@ import Main.Student;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class AddUpdateStudentForm extends EditEntityFramework {
+class AddUpdateStudentForm extends EditEntityFramework {
 
     public AddUpdateStudentForm(){
-        this.EntityIDLabel.setText("Student ID: S00" + (Assignment2.EntityManager.Students.length + 1));
-        SetupForm();
+        this.entityDetailsPanel.remove(this.entityIDTextBox);
+        this.entityIDLabel.setText("Student ID: S00" + (Assignment2.entityManager.students.length + 1));
+        setupForm();
     }
 
     public AddUpdateStudentForm(String id){
-        SetupForm();
-        Student workStudent = Assignment2.EntityManager.FindStudentByID(id);
-        this.EntityIDLabel.setText("Student ID: " + workStudent.GetID());
-        this.EntityNameTextBox.setText(workStudent.GetName());
-        this.EntityAddressArea.setText(workStudent.GetAddress());
+        this.entityDetailsPanel.remove(this.entityIDTextBox);
+        setupForm();
+        Student workStudent = Assignment2.entityManager.getStudentByID(id);
+        this.entityIDLabel.setText("Student ID: " + workStudent.getID());
+        this.entityNameTextBox.setText(workStudent.getName());
+        this.entityAddressArea.setText(workStudent.getAddress());
+        this.studentHasSpecialNeedsCheckBox.setSelected(workStudent.GetSpecialNeedsStatus());
     }
 
     @Override
-    public void ButtonOKListener() {
+    public void buttonOKListener() {
         buttonOK.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (!EntityNameTextBox.getText().equals("") && !EntityAddressArea.getText().equals("")){
-                    Student newStudent = new Student(EntityIDLabel.getText().replace("Student ID: ", ""),
-                            EntityNameTextBox.getText(),
-                            EntityAddressArea.getText(),
-                            StudentHasSpecialNeedsCheckBox.isSelected());
-                    Assignment2.EntityManager.AddUpdateStudent(newStudent);
+                if (!entityNameTextBox.getText().equals("") && !entityAddressArea.getText().equals("")){
+                    Student newStudent = new Student(entityIDLabel.getText().replace("Student ID: ", ""),
+                            entityNameTextBox.getText(),
+                            entityAddressArea.getText(),
+                            studentHasSpecialNeedsCheckBox.isSelected());
+                    Assignment2.entityManager.addUpdateStudent(newStudent);
                     dispose();
                 }
                 else{
-                    ErrorLabel.setText("Complete name and address");
-                    ErrorLabel.setVisible(true);
+                    errorLabel.setText("Complete name and address");
+                    errorLabel.setVisible(true);
                 }
             }
         });

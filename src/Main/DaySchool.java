@@ -6,51 +6,42 @@ import java.time.LocalTime;
 import java.util.Arrays;
 
 public class DaySchool {
-    public Session[] Sessions = new Session[]{};
-    private String Theme;
-    private LocalDate Date;
-
-    public DaySchool() {
-        GenerateSessions();
-    }
+    public Session[] sessions = new Session[]{};
+    private final String theme;
+    private final LocalDate date;
 
     public DaySchool(String theme, LocalDate date) {
-        this.Theme = theme;
-        this.Date = date;
-        GenerateSessions();
+        this.theme = theme;
+        this.date = date;
+        generateSessions();
     }
-
-    String[] GetStudentsFromSession(int sessionID) {
-        for (Session session : Sessions) {
-            if (sessionID == session.GetSessionID()) {
-                return session.GetStudentIDs();
+    String[] getStudentsFromSession(int sessionID) {
+        for (Session session : this.sessions) {
+            if (sessionID == session.getID()) {
+                return session.getStudentIDs();
             }
         }
         return null;
     }
-
-    public String GetTheme() {
-        return this.Theme;
+    public String getTheme() {
+        return this.theme;
     }
-
-    public LocalDate GetDate() {
-        return this.Date;
+    public LocalDate getDate() {
+        return this.date;
     }
-
-    int GetSessionIDByTime(LocalDateTime time) {
-        for (Session session : Sessions) {
-            if (session.GetTime().getHour() == time.getHour() && session.GetTime().getMinute() == time.getMinute()) {
-                return session.GetSessionID();
+    int getSessionIDByTime(LocalDateTime time) {
+        for (Session session : this.sessions) {
+            if (session.getTime().getHour() == time.getHour() && session.getTime().getMinute() == time.getMinute()) {
+                return session.getID();
             }
         }
         return -1;
     }
-
-    private void GenerateSessions() {
+    private void generateSessions() {
         LocalTime time = LocalTime.of(8, 0);
-        for (int i = 0; i <= 6; i++) {
-            Sessions = Arrays.copyOf(Sessions, Sessions.length + 1);
-            Sessions[Sessions.length - 1] = new Session(i, LocalTime.of(time.getHour() + i, 0), Assignment2.EntityManager.Tutors[i % 3].GetID());
+        for (int i = 1; i <= 6; i++) {
+            this.sessions = Arrays.copyOf(this.sessions, this.sessions.length + 1);
+            this.sessions[this.sessions.length - 1] = new Session(i, LocalTime.of(time.getHour() + i, 0), Assignment2.entityManager.tutors[i % 3].getID());
         }
     }
 }

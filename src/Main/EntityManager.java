@@ -3,79 +3,69 @@ package Main;
 import java.util.Arrays;
 
 public class EntityManager {
-    public Tutor[] Tutors = new Tutor[]{};
-    public Student[] Students = new Student[]{};
+    public Tutor[] tutors = new Tutor[]{};
+    public Student[] students = new Student[]{};
 
-    public Tutor FindTutorByID(String id){
-        for (Tutor tutor: Tutors){
-            if (tutor.GetID().equals(id)){
+    public Tutor getTutorByID(String id){
+        for (Tutor tutor: tutors){
+            if (tutor.getID().equals(id)){
                 return tutor;
             }
         }
         return null;
     }
-
-    public Tutor FindTutorByName(String name)
-    {
-        for (Tutor tutor: Tutors){
-            if (tutor.GetName().equals(name))
+    public Tutor getTutorByName(String name){
+        for (Tutor tutor: tutors){
+            if (tutor.getName().equals(name))
                 return tutor;
         }
         return null;
     }
-
-    public Student FindStudentByName(String name)
-    {
-        for (Student student: Students){
-            if (student.GetName().equals(name))
+    public Student getStudentByName(String name){
+        for (Student student: this.students){
+            if (student.getName().equals(name))
                 return student;
         }
         return null;
     }
-
-    public Student FindStudentByID(String id){
-        for (Student student: Students){
-            if (student.GetID().equals(id)) {
+    public Student getStudentByID(String id){
+        for (Student student: this.students){
+            if (student.getID().equals(id)) {
                 return student;
             }
         }
         return null;
     }
-
-    public void AddTutor(Tutor newTutor){
-        Tutors = Arrays.copyOf(Tutors, Tutors.length +1);
-        Tutors[Tutors.length-1] = newTutor;
+    public void addTutor(Tutor newTutor){
+        tutors = Arrays.copyOf(tutors, tutors.length +1);
+        tutors[tutors.length-1] = newTutor;
 
     }
-    public void AddStudent(Student newStudent){
-        Students = Arrays.copyOf(Students, Students.length +1);
-        Students[Students.length -1] = newStudent;
+    public void addStudent(Student newStudent){
+        this.students = Arrays.copyOf(this.students, this.students.length +1);
+        this.students[this.students.length -1] = newStudent;
     }
-
-    public void AddUpdateStudent(Student newStudent){
-        boolean StudentUpdated = UpdateStudent(newStudent);
-        if (!StudentUpdated) AddStudent(newStudent);
+    public void addUpdateStudent(Student newStudent){
+        boolean StudentUpdated = updateStudent(newStudent);
+        if (!StudentUpdated) addStudent(newStudent);
     }
-
-    public void AddUpdateTutor(Tutor newTutor){
-        boolean TutorUpdated = UpdateTutor(newTutor);
-        if (!TutorUpdated) UpdateTutor(newTutor);
+    public void addUpdateTutor(Tutor newTutor){
+        boolean TutorUpdated = updateTutor(newTutor);
+        if (!TutorUpdated) addTutor(newTutor);
     }
-
-    private boolean UpdateStudent(Student newStudent){
-        for (int i = 0; i < Students.length; i++){
-            if (Students[i].GetID().equals(newStudent.GetID())){
-                Students[i] = newStudent;
+    private boolean updateStudent(Student newStudent){
+        for (int i = 0; i < this.students.length; i++){
+            if (this.students[i].getID().equals(newStudent.getID())){
+                this.students[i] = newStudent;
                 return true;
             }
         }
         return false;
     }
-
-    private boolean UpdateTutor(Tutor newTutor){
-        for (int i =0; i < Tutors.length; i++){
-            if (Tutors[i].GetID().equals(newTutor.GetID())){
-                Tutors[i] = newTutor;
+    private boolean updateTutor(Tutor newTutor){
+        for (int i = 0; i < tutors.length; i++){
+            if (tutors[i].getID().equals(newTutor.getID())){
+                tutors[i] = newTutor;
                 return true;
             }
         }

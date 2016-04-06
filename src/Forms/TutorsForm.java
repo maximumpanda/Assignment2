@@ -1,99 +1,73 @@
 package Forms;
 
 import Main.Assignment2;
-import Main.Student;
 import Main.Tutor;
 
-import javax.swing.*;
+import javax.swing.DefaultListModel;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import java.awt.event.*;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.time.format.DateTimeFormatter;
 
-/**
- * Created by steven-pc on 3/20/2016.
- */
-public class TutorsForm extends EntityInspectFramework {
-
-    private AddUpdateTutorForm addUpdateTutorsForm = null;
+class TutorsForm extends EntityInspectFramework {
 
     public TutorsForm(){
-        this.InitializeEntityInspectFramework();
-        Configure();
+        this.initializeEntityInspectFramework();
+        configure();
     }
 
-    private void Configure(){
-        this.EntityDetailsPanel.remove(SpecialNeedsLabelStatic);
-        this.EntityDetailsPanel.remove(SpecialNeedsLabel);
-        this.SessionDetailsPanel.remove(SessionTutorLabelStatic);
-        this.SessionDetailsPanel.remove(SessionTutorLabel);
-    }
-
-    @Override
-    public void AdditionalListeners() {
-        this.addWindowFocusListener(new WindowFocusListener() {
-            @Override
-            public void windowGainedFocus(WindowEvent e) {
-                if (addUpdateTutorsForm == null || !addUpdateTutorsForm.isVisible()){
-                    DefaultListModel<String> listModel = new DefaultListModel<String>();
-                    for (Tutor tutor : Assignment2.EntityManager.Tutors){
-                        listModel.addElement(tutor.GetName());
-                    }
-                    EntityList.setModel(listModel);
-                }
-                else {
-                    addUpdateTutorsForm.toFront();
-                }
-            }
-
-            @Override
-            public void windowLostFocus(WindowEvent e) {
-
-            }
-        });
-
+    private void configure(){
+        this.entityDetailsPanel.remove(specialNeedsLabelStatic);
+        this.entityDetailsPanel.remove(specialNeedsLabel);
+        this.sessionDetailsPanel.remove(sessionTutorLabelStatic);
+        this.sessionDetailsPanel.remove(sessionTutorLabel);
     }
 
     @Override
-    public void PopulateEntityList() {
-        DefaultListModel listValues = new DefaultListModel();
-        for (Tutor tutor: Assignment2.EntityManager.Tutors) listValues.addElement(tutor.GetName());
-        EntityList.setModel(listValues);
+    public void populateEntityList() {
+        DefaultListModel<String> listValues = new DefaultListModel<>();
+        for (Tutor tutor: Assignment2.entityManager.tutors){
+            listValues.addElement(tutor.getName());
+        }
+        entityList.setModel(listValues);
     }
 
     @Override
-    public void TextBoxListeners() {
-        SearchTextBox.getDocument().addDocumentListener(new DocumentListener() {
+    public void textBoxListeners() {
+        searchTextBox.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                String IDPartial = SearchTextBox.getText();
-                DefaultListModel listModel = new DefaultListModel();
+                String IDPartial = searchTextBox.getText();
+                DefaultListModel<String> listModel = new DefaultListModel<>();
                 if (IDPartial.length() >= 1) {
-                    for (Tutor tutor : Assignment2.EntityManager.Tutors) {
-                        if (tutor.GetID().contains(IDPartial)) listModel.addElement(tutor.GetName());
+                    for (Tutor tutor : Assignment2.entityManager.tutors) {
+                        if (tutor.getID().contains(IDPartial)) listModel.addElement(tutor.getName());
                     }
                 }
-                EntityList.setModel(listModel);
-                EntityList.repaint();
+                entityList.setModel(listModel);
+                entityList.repaint();
             }
             @Override
             public void removeUpdate(DocumentEvent e) {
-                String IDPartial = SearchTextBox.getText();
-                DefaultListModel listModel = new DefaultListModel();
+                String IDPartial = searchTextBox.getText();
+                DefaultListModel<String> listModel = new DefaultListModel<>();
                 if (IDPartial.length() == 0) {
 
-                    for (Tutor tutor : Assignment2.EntityManager.Tutors) {
-                        listModel.addElement(tutor.GetName());
+                    for (Tutor tutor : Assignment2.entityManager.tutors) {
+                        listModel.addElement(tutor.getName());
                     }
                 } else {
-                    for (Tutor tutor : Assignment2.EntityManager.Tutors) {
-                        if (tutor.GetID().contains(IDPartial)) {
-                            listModel.addElement(tutor.GetName());
+                    for (Tutor tutor : Assignment2.entityManager.tutors) {
+                        if (tutor.getID().contains(IDPartial)) {
+                            listModel.addElement(tutor.getName());
                         }
                     }
                 }
-                EntityList.setModel(listModel);
-                EntityList.repaint();
+                entityList.setModel(listModel);
+                entityList.repaint();
             }
 
             @Override
@@ -101,13 +75,13 @@ public class TutorsForm extends EntityInspectFramework {
 
             }
         });
-        SearchTextBox.addFocusListener(new FocusAdapter() {
+        searchTextBox.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
-                SearchTextBox.setText("");
+                searchTextBox.setText("");
             }
         });
-        SearchTextBox.addKeyListener(new KeyAdapter() {
+        searchTextBox.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
                 char c = e.getKeyChar();
@@ -119,45 +93,55 @@ public class TutorsForm extends EntityInspectFramework {
     }
 
     @Override
-    public void ListListener() {
-        EntityList.addListSelectionListener(e -> {
-            if (EntityList.getSelectedValue() != null) {
-                Tutor tempTutor = Assignment2.EntityManager.FindTutorByName(EntityList.getSelectedValue().toString());
-                this.EntityIDLabel.setText(tempTutor.GetID());
-                this.NameLabel.setText(tempTutor.GetName());
-                String[] splitAddress = tempTutor.GetAddress().split(", ");
-                this.AddressStreetLabel.setText(splitAddress[0] + ", " + splitAddress[1]);
-                this.AddressCityLabel.setText(splitAddress[3] + ", " + splitAddress[4]);
-                this.AddressCountryLabel.setText(splitAddress[5]);
-                DefaultListModel listValues = new DefaultListModel();
-                for (int x = 0; x < Assignment2.DaySchoolManager.DaySchools.length; x++){
-                    for (int y =0; y <7; y++){
-                        if (Assignment2.DaySchoolManager.DaySchools[x].Sessions[y].GetTutorID().equals(tempTutor.GetID())){
-                            listValues.addElement(Assignment2.DaySchoolManager.DaySchools[x].GetDate().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")) +
-                                    " " + Assignment2.DaySchoolManager.DaySchools[x].Sessions[y].GetTime());
+    public void listListener() {
+        entityList.addListSelectionListener(e -> {
+            if (entityList.getSelectedValue() != null) {
+                Tutor tempTutor = Assignment2.entityManager.getTutorByName(entityList.getSelectedValue());
+                this.entityIDLabel.setText(tempTutor.getID());
+                this.nameLabel.setText(tempTutor.getName());
+                String[] splitAddress = tempTutor.getAddress().split(", ");
+                this.addressStreetLabel.setText(splitAddress[0] + ", " + splitAddress[1]);
+                this.addressCityLabel.setText(splitAddress[3] + ", " + splitAddress[4]);
+                this.addressCountryLabel.setText(splitAddress[5]);
+                DefaultListModel<String> listValues = new DefaultListModel<>();
+                for (int x = 0; x < Assignment2.daySchoolManager.daySchools.length; x++){
+                    for (int y =0; y < 6; y++){
+                        if (Assignment2.daySchoolManager.daySchools[x].sessions[y].getTutorID().equals(tempTutor.getID())){
+                            listValues.addElement(Assignment2.daySchoolManager.daySchools[x].getDate().format(DateTimeFormatter.ofPattern("MM/dd/yyyy")) +
+                                    " " + Assignment2.daySchoolManager.daySchools[x].sessions[y].getTime());
                         }
                     }
                 }
-                SessionList.setModel(listValues);
-                SessionList.repaint();
+                sessionList.setModel(listValues);
+                sessionList.repaint();
+                this.entitySessionsCountLabel.setText(Integer.toString(sessionList.getModel().getSize()));
             }
         });
 
     }
 
     @Override
-    public void AddEntityButtonFunction() {
-        if (this.addUpdateTutorsForm == null || !this.addUpdateTutorsForm.isVisible()) {
-            addUpdateTutorsForm = new AddUpdateTutorForm();
-            addUpdateTutorsForm.setVisible(true);
+    public void addEntityButtonFunction() {
+        if (this.editEntityForm == null || !this.editEntityForm.isVisible()) {
+            editEntityForm = new AddUpdateTutorForm();
+            editEntityForm.setVisible(true);
         }
     }
 
     @Override
-    public void EditEntityButtonFunction() {
-        if (this.addUpdateTutorsForm == null || !this.addUpdateTutorsForm.isVisible()) {
-            addUpdateTutorsForm = new AddUpdateTutorForm(EntityIDLabel.getText().replace("Tutor ID: ", ""));
-            addUpdateTutorsForm.setVisible(true);
+    public void editEntityButtonFunction() {
+        if (this.editEntityForm == null || !this.editEntityForm.isVisible()) {
+            editEntityForm = new AddUpdateTutorForm(entityIDLabel.getText().replace("Tutor ID: ", ""));
+            editEntityForm.setVisible(true);
         }
+    }
+
+    @Override
+    DefaultListModel<String> windowFocusGainedUpdateList() {
+        DefaultListModel<String> listModel = new DefaultListModel<>();
+        for (Tutor tutor : Assignment2.entityManager.tutors){
+            listModel.addElement(tutor.getName());
+        }
+        return listModel;
     }
 }

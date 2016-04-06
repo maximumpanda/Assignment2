@@ -6,46 +6,45 @@ import Main.Tutor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-/**
- * Created by steven-pc on 3/21/2016.
- */
-public class AddUpdateTutorForm extends EditEntityFramework {
+class AddUpdateTutorForm extends EditEntityFramework {
 
     public AddUpdateTutorForm(){
-        this.EntityIDLabel.setText("Tutor ID: T00" + (Assignment2.EntityManager.Tutors.length + 1));
-        SetupForm();
-        Configure();
+        this.entityDetailsPanel.remove(this.entityIDTextBox);
+        this.entityIDLabel.setText("Tutor ID: T00" + (Assignment2.entityManager.tutors.length + 1));
+        setupForm();
+        configure();
     }
 
     public AddUpdateTutorForm(String id)
     {
-        SetupForm();
-        Tutor workTutor = Assignment2.EntityManager.FindTutorByID(id);
-        this.EntityIDLabel.setText("Tutor ID: " + workTutor.GetID());
-        this.EntityNameTextBox.setText(workTutor.GetName());
-        this.EntityAddressArea.setText(workTutor.GetAddress());
-        Configure();
+        this.entityDetailsPanel.remove(this.entityIDTextBox);
+        setupForm();
+        Tutor workTutor = Assignment2.entityManager.getTutorByID(id);
+        this.entityIDLabel.setText("Tutor ID: " + workTutor.getID());
+        this.entityNameTextBox.setText(workTutor.getName());
+        this.entityAddressArea.setText(workTutor.getAddress());
+        configure();
     }
 
-    private void Configure(){
-        this.EntityDetailsPanel.remove(StudentHasSpecialNeedsCheckBox);
+    private void configure(){
+        this.entityDetailsPanel.remove(studentHasSpecialNeedsCheckBox);
     }
 
     @Override
-    public void ButtonOKListener() {
+    public void buttonOKListener() {
         buttonOK.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (!EntityNameTextBox.getText().equals("") && !EntityAddressArea.getText().equals("")){
-                    Tutor newTutor = new Tutor("S00" + (Assignment2.EntityManager.Tutors.length + 1),
-                            EntityNameTextBox.getText(),
-                            EntityAddressArea.getText());
-                    Assignment2.EntityManager.AddUpdateTutor(newTutor);
+                if (!entityNameTextBox.getText().equals("") && !entityAddressArea.getText().equals("")){
+                    Tutor newTutor = new Tutor("S00" + (Assignment2.entityManager.tutors.length + 1),
+                            entityNameTextBox.getText(),
+                            entityAddressArea.getText());
+                    Assignment2.entityManager.addUpdateTutor(newTutor);
                     dispose();
                 }
                 else{
-                    ErrorLabel.setText("Complete name and address");
-                    ErrorLabel.setVisible(true);
+                    errorLabel.setText("Complete name and address");
+                    errorLabel.setVisible(true);
                 }
             }
         });

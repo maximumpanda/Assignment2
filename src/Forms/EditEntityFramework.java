@@ -1,29 +1,33 @@
 package Forms;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-/**
- * Created by steven-pc on 3/20/2016.
- */
-public abstract class EditEntityFramework extends JFrame {
-    public JLabel EntityIDLabel;
-    public JTextField EntityNameTextBox;
-    public JTextArea EntityAddressArea;
-    public JCheckBox StudentHasSpecialNeedsCheckBox;
-    public JButton buttonOK;
-    public JButton buttonCancel;
-    public JLabel ErrorLabel;
-    public JPanel panel1;
-    public JPanel EntityDetailsPanel;
+abstract class EditEntityFramework extends JFrame {
+    JTextField entityIDTextBox;
+    JTextField entityNameTextBox;
+    JTextArea entityAddressArea;
+    JCheckBox studentHasSpecialNeedsCheckBox;
+    JButton buttonOK;
+    private JButton buttonCancel;
+    JLabel errorLabel;
+    private JPanel panel1;
+    JPanel entityDetailsPanel;
+    JLabel entityIDLabel;
 
-    public void SetupForm() {
+    void setupForm() {
         setContentPane(panel1);
         pack();
         this.setLocationRelativeTo(null);
-        this.ErrorLabel.setVisible(false);
-        ButtonOKListener();
+        this.errorLabel.setVisible(false);
+        buttonOKListener();
         buttonCancel.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -32,5 +36,5 @@ public abstract class EditEntityFramework extends JFrame {
         });
     }
 
-    public abstract void ButtonOKListener();
+    abstract void buttonOKListener();
 }

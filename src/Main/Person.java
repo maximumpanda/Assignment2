@@ -1,38 +1,26 @@
 package Main;
 
 public class Person {
-    private String ID;
-    private String Name;
-    private String Address;
+    private String id;
+    private String name;
+    private String address;
 
-    public Person(){}
-
-    public Person(String id){
-        this.ID = id;
+    public String getAddress(){
+        return this.address;
     }
-
-    public Person(String id, String name, String address){
-        this.ID = id;
-        this.Name = name;
-        this.Address = address;
+    public String getID(){
+        return this.id;
     }
-
-    public String GetAddress(){
-        return this.Address;
+    public String getName(){
+        return this.name;
     }
-    public String GetID(){
-        return this.ID;
+    void setAddress(String address){
+        this.address = address;
     }
-    public String GetName(){
-        return this.Name;
+    void setID(String id){
+        this.id = id;
     }
-    void SetAddress(String address){
-        this.Address = address;
-    }
-    void SetID(String id){
-        this.ID = id;
-    }
-    void SetName(String name){
-        this.Name = name;
+    void setName(String name){
+        this.name = name;
     }
 }
