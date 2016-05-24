@@ -1,7 +1,8 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.HelpEntry;
+import Forms.utility.WhiteGreyCellRenderer;
+import Core.Assignment2;
+import Core.HelpEntry;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

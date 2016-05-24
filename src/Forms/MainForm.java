@@ -1,8 +1,9 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.DaySchool;
-import Main.Session;
+import Forms.utility.WhiteGreyCellRenderer;
+import Core.Assignment2;
+import Core.DaySchool;
+import Core.Session;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;

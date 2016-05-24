@@ -1,9 +1,9 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.DaySchool;
-import Main.Session;
-import Main.Student;
+import Core.Assignment2;
+import Core.DaySchool;
+import Core.Session;
+import Core.Student;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;

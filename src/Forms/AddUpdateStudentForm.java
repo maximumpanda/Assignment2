@@ -1,7 +1,7 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.Student;
+import Core.Assignment2;
+import Core.Student;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;

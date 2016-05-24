@@ -1,8 +1,8 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.HelpAction;
-import Main.HelpEntry;
+import Core.Assignment2;
+import Core.HelpAction;
+import Core.HelpEntry;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultListModel;

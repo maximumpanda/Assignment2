@@ -1,7 +1,7 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.Student;
+import Core.Assignment2;
+import Core.Student;
 
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;

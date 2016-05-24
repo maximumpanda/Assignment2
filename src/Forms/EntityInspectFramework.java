@@ -1,6 +1,7 @@
 package Forms;
 
-import Main.Assignment2;
+import Forms.utility.WhiteGreyCellRenderer;
+import Core.Assignment2;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;

@@ -1,7 +1,7 @@
 package Forms;
 
-import Main.Assignment2;
-import Main.Tutor;
+import Core.Assignment2;
+import Core.Tutor;
 
 import javax.swing.DefaultListModel;
 import javax.swing.event.DocumentEvent;
