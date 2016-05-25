@@ -53,6 +53,16 @@ public class EntityManager {
         boolean TutorUpdated = updateTutor(newTutor);
         if (!TutorUpdated) addTutor(newTutor);
     }
+    public void removeStudentByID(String studentID){
+        Student[] newStudentsArray = new Student[]{};
+        for (Student student: students){
+            if (!student.getID().equals(studentID)){
+                newStudentsArray = Arrays.copyOf(newStudentsArray, newStudentsArray.length +1);
+                newStudentsArray[newStudentsArray.length -1] = student;
+            }
+        }
+        students = newStudentsArray;
+    }
     private boolean updateStudent(Student newStudent){
         for (int i = 0; i < this.students.length; i++){
             if (this.students[i].getID().equals(newStudent.getID())){

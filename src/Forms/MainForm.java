@@ -1,5 +1,6 @@
 package Forms;
 
+import Forms.utility.Standardization;
 import Forms.utility.WhiteGreyCellRenderer;
 import Core.Assignment2;
 import Core.DaySchool;
@@ -77,7 +78,7 @@ public class MainForm extends JFrame {
         int selectedSession = sessionList.getSelectedIndex();
         DefaultListModel<String> listValues = new DefaultListModel<>();
         for (DaySchool daySchool: Assignment2.daySchoolManager.daySchools){
-            listValues.addElement(daySchool.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + " - " + daySchool.getTheme());
+            listValues.addElement(Standardization.FormatDateTime(daySchool.getDate()) + " - " + daySchool.getTheme());
         }
         daySchoolList.setModel(listValues);
         daySchoolList.setSelectedIndex(selectedIndex);
@@ -114,7 +115,7 @@ public class MainForm extends JFrame {
                 String[] dateSplit = daySchoolDate.split("/");
                 String sessionTime = sessionTimeLabel.getText();
                 for (int x = 0; x< Assignment2.daySchoolManager.daySchools.length; x++){
-                    if (Assignment2.daySchoolManager.daySchools[x].getDate().equals(LocalDate.parse(dateSplit[2] + "-" + dateSplit[1] + "-" + dateSplit[0]))){
+                    if (Assignment2.daySchoolManager.daySchools[x].getDate().equals(Standardization.GenerateLocalDate(dateSplit))){
                         for (int y = 0; y < Assignment2.daySchoolManager.daySchools[x].sessions.length; y++){
                             if (Assignment2.daySchoolManager.daySchools[x].sessions[y].getTime().equals(LocalTime.parse(sessionTime))){
                                 Assignment2.daySchoolManager.daySchools[x].sessions[y].removeStudentByID(studentID);
@@ -137,7 +138,7 @@ public class MainForm extends JFrame {
             if (entityInspectForm == null || !entityInspectForm.isVisible() ||
                     entityEditForm == null || !entityEditForm.isVisible()){
                 String[] dateSplit = this.dateLabel.getText().split("/");
-                entityEditForm = new SearchStudentForm(LocalDate.parse(dateSplit[2] + "-" + dateSplit[1] + "-"+ dateSplit[0]), LocalTime.parse(this.sessionTimeLabel.getText()));
+                entityEditForm = new SearchStudentForm(Standardization.GenerateLocalDate(dateSplit), LocalTime.parse(this.sessionTimeLabel.getText()));
                 entityEditForm.setVisible(true);
             }
         });
@@ -156,9 +157,8 @@ public class MainForm extends JFrame {
             if (index != -1) {
                 String selectedValue = daySchoolList.getModel().getElementAt(index);
                 String[] dateString = selectedValue.split(" ");
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-                DaySchool workDaySchool = Assignment2.daySchoolManager.getDaySchoolByDate(LocalDate.parse(dateString[0], formatter));
-                dateLabel.setText(workDaySchool.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+                DaySchool workDaySchool = Assignment2.daySchoolManager.getDaySchoolByDate(LocalDate.parse(dateString[0], Standardization.dateFormatter));
+                dateLabel.setText(Standardization.FormatDateTime(workDaySchool.getDate()));
                 themeLabel.setText(String.format("<html><div WIDTH=%d>%s</div><html>", daySchoolDataPanel.getWidth() / 2, workDaySchool.getTheme()));
                 DefaultListModel<String> listModel = new DefaultListModel<>();
                 for (Session session : workDaySchool.sessions) {
@@ -174,7 +174,7 @@ public class MainForm extends JFrame {
             if (index == -1) index = 0;
             String selectedValue = sessionList.getModel().getElementAt(index);
             String[] values = selectedValue.split(" - ");
-            DaySchool workDaySchool = Assignment2.daySchoolManager.getDaySchoolByDate(LocalDate.parse(this.dateLabel.getText(), DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+            DaySchool workDaySchool = Assignment2.daySchoolManager.getDaySchoolByDate(LocalDate.parse(this.dateLabel.getText(), Standardization.dateFormatter));
             for (Session session: workDaySchool.sessions)
             {
                 if (session.getTime().toString().equals(values[1]))
@@ -202,8 +202,10 @@ public class MainForm extends JFrame {
                 DefaultListModel<String> listModel = new DefaultListModel<>();
                 if (IDPartial.length() >= 1) {
                     for (DaySchool daySchool : Assignment2.daySchoolManager.daySchools) {
-                        if (daySchool.getTheme().contains(IDPartial)) listModel.addElement(daySchool.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + " - " + daySchool.getTheme());
-                        if (daySchool.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")).contains(IDPartial)) listModel.addElement(daySchool.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + " - " + daySchool.getTheme());
+                        if (daySchool.getTheme().contains(IDPartial))
+                            listModel.addElement(Standardization.FormatDateTime(daySchool.getDate()) + " - " + daySchool.getTheme());
+                        if (Standardization.FormatDateTime(daySchool.getDate()).contains(IDPartial))
+                            listModel.addElement(Standardization.FormatDateTime(daySchool.getDate()) + " - " + daySchool.getTheme());
                     }
                 }
                 daySchoolList.setModel(listModel);

@@ -36,7 +36,7 @@ class AddUpdateTutorForm extends EditEntityFramework {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (!entityNameTextBox.getText().equals("") && !entityAddressArea.getText().equals("")){
-                    Tutor newTutor = new Tutor("S00" + (Assignment2.entityManager.tutors.length + 1),
+                    Tutor newTutor = new Tutor(
                             entityNameTextBox.getText(),
                             entityAddressArea.getText());
                     Assignment2.entityManager.addUpdateTutor(newTutor);

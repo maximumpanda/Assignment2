@@ -7,13 +7,13 @@ import java.util.List;
 import java.util.Random;
 
 public class Session {
-    private final int sessionID;
+    private final int id;
     private final LocalTime time;
     private String tutorID = generateTutorId();
     private String[] studentIDs = generateStudents();
 
     public Session(int sessionID, LocalTime time, String tutorID){
-        this.sessionID = sessionID;
+        this.id = sessionID;
         this.time = time;
         this.tutorID = tutorID;
         generateStudents();
@@ -21,7 +21,7 @@ public class Session {
     }
 
     public int getID(){
-        return this.sessionID;
+        return this.id;
     }
     public LocalTime getTime() {
         return this.time;

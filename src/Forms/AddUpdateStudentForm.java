@@ -30,7 +30,7 @@ class AddUpdateStudentForm extends EditEntityFramework {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (!entityNameTextBox.getText().equals("") && !entityAddressArea.getText().equals("")){
-                    Student newStudent = new Student(entityIDLabel.getText().replace("Student ID: ", ""),
+                    Student newStudent = new Student(
                             entityNameTextBox.getText(),
                             entityAddressArea.getText(),
                             studentHasSpecialNeedsCheckBox.isSelected());

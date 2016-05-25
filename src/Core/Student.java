@@ -5,11 +5,17 @@ public class Student extends Person {
 
     public Student(){}
 
-    public Student(String id, String name, String address, boolean hasSpecialNeeds){
-        this.setID(id);
+    public Student(String name, String address, boolean hasSpecialNeeds){
+        this.setID(GenerateID());
         this.setName(name);
         this.setAddress(address);
         this.hasSpecialNeeds = hasSpecialNeeds;
+    }
+
+    private String GenerateID(){
+        String id = Integer.toString(Assignment2.entityManager.students.length);
+        while (id.length() < 3) id = "0" + id;
+        return "S" + id;
     }
     public boolean GetSpecialNeedsStatus(){
         return this.hasSpecialNeeds;

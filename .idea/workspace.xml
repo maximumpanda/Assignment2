@@ -1,85 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="Assignment2" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Core/Assignment2.java" line="16" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6b50e841-2784-498e-81f5-6d617f5e6540" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/WhiteGreyCellRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/Assignment2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/DaySchool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/DaySchoolManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/EntityManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/HelpAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/HelpEntry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/Session.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/Student.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Assignment2/Main/Tutor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Forms/WhiteGreyCellRenderer.java" afterPath="$PROJECT_DIR$/src/Forms/utility/WhiteGreyCellRenderer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/Assignment2.java" afterPath="$PROJECT_DIR$/src/Core/Assignment2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/DaySchool.java" afterPath="$PROJECT_DIR$/src/Core/DaySchool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/DaySchoolManager.java" afterPath="$PROJECT_DIR$/src/Core/DaySchoolManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/EntityManager.java" afterPath="$PROJECT_DIR$/src/Core/EntityManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/HelpAction.java" afterPath="$PROJECT_DIR$/src/Core/HelpAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/HelpEntry.java" afterPath="$PROJECT_DIR$/src/Core/HelpEntry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/Person.java" afterPath="$PROJECT_DIR$/src/Core/Person.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/Session.java" afterPath="$PROJECT_DIR$/src/Core/Session.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/Student.java" afterPath="$PROJECT_DIR$/src/Core/Student.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main/Tutor.java" afterPath="$PROJECT_DIR$/src/Core/Tutor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Forms/utility/Standardization.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Testing/UnitTests.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/production/Assignment2/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/artifacts/Assignment2_jar/Assignment2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/Assignment2.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/Assignment2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/DaySchool.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/DaySchool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/DaySchoolManager.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/DaySchoolManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/EntityManager.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/EntityManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/Session.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/Session.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/Student.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Core/Tutor.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Core/Tutor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateStudentForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateStudentForm$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateStudentForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateStudentForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateTutorForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateTutorForm$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateTutorForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/AddUpdateTutorForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework$2.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework$3.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/EntityInspectFramework.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$2.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$3.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$4.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$5.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$6.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/Form1HelpForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/HelpFramework.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/HelpFramework.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm$2.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm$3.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/MainForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchSessionForStudentsForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchSessionForStudentsForm$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchSessionForStudentsForm$2.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchSessionForStudentsForm$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchSessionForStudentsForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchSessionForStudentsForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchStudentForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchStudentForm$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchStudentForm$3.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/SearchStudentForm$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/StudentsForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/StudentsForm$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/StudentsForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/StudentsForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/TutorsForm$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/TutorsForm$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Forms/TutorsForm.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Forms/TutorsForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2_jar/Assignment2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" afterPath="$PROJECT_DIR$/out/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/test/Assignment2/artifacts/Assignment2/Assignment2.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Assignment2.java" afterPath="$PROJECT_DIR$/src/Core/Assignment2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/DaySchool.java" afterPath="$PROJECT_DIR$/src/Core/DaySchool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/DaySchoolManager.java" afterPath="$PROJECT_DIR$/src/Core/DaySchoolManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/EntityManager.java" afterPath="$PROJECT_DIR$/src/Core/EntityManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Session.java" afterPath="$PROJECT_DIR$/src/Core/Session.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Student.java" afterPath="$PROJECT_DIR$/src/Core/Student.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Core/Tutor.java" afterPath="$PROJECT_DIR$/src/Core/Tutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java" afterPath="$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/AddUpdateTutorForm.java" afterPath="$PROJECT_DIR$/src/Forms/AddUpdateTutorForm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/EntityInspectFramework.java" afterPath="$PROJECT_DIR$/src/Forms/EntityInspectFramework.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/Form1HelpForm.java" afterPath="$PROJECT_DIR$/src/Forms/Form1HelpForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/HelpFramework.java" afterPath="$PROJECT_DIR$/src/Forms/HelpFramework.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/MainForm.java" afterPath="$PROJECT_DIR$/src/Forms/MainForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/SearchSessionForStudentsForm.java" afterPath="$PROJECT_DIR$/src/Forms/SearchSessionForStudentsForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/SearchStudentForm.java" afterPath="$PROJECT_DIR$/src/Forms/SearchStudentForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/StudentsForm.java" afterPath="$PROJECT_DIR$/src/Forms/StudentsForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Forms/TutorsForm.java" afterPath="$PROJECT_DIR$/src/Forms/TutorsForm.java" />
     </list>
     <ignored path="Assignment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,35 +93,40 @@
         <entry file="file://$PROJECT_DIR$/src/Forms/MainForm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="method#MainForm#0;class#MainForm#0" expanded="false" />
-                <element signature="method#removeUpdate#0;class#9360:11785" expanded="false" />
+                <element signature="method#removeUpdate#0;class#9228:11655" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assignment2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Core/Assignment2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17391305">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding>
-                <element signature="method#generateDaySchools#0;class#Assignment2#0" expanded="false" />
-                <element signature="method#generateEntities#0;class#Assignment2#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityInspectFramework.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/EntityInspectFramework.java">
+      <file leaf-file-name="UnitTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Testing/UnitTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-              <folding />
+              <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#CreateNewStudent#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#FindStudentByID#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#AddStudentToSession#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#FindStudentSessions#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#RemoveStudentFromAllSessions#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#CheckStudentCount#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#CheckStudentName#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#CheckStudentAddress#0;class#UnitTests#0" expanded="false" />
+                <element signature="method#CheckStudentSpecialNeedsStatus#0;class#UnitTests#0" expanded="false" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainForm.form" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Forms/MainForm.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -145,34 +134,28 @@
         <entry file="file://$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
               <folding>
-                <element signature="method#mouseClicked#0;class#1018:1815" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WhiteGreyCellRenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/utility/WhiteGreyCellRenderer.java">
+      <file leaf-file-name="EntityManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/EntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TutorsForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/TutorsForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="140" column="70" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="70" />
+              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               <folding>
-                <element signature="method#configure#0;class#TutorsForm#0" expanded="false" />
-                <element signature="method#populateEntityList#0;class#TutorsForm#0" expanded="false" />
-                <element signature="method#textBoxListeners#0;class#TutorsForm#0" expanded="false" />
-                <element signature="method#listListener#0;class#TutorsForm#0" expanded="false" />
+                <element signature="method#getTutorByID#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#getTutorByName#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#getStudentByName#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#getStudentByID#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#addTutor#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#addUpdateStudent#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#addUpdateTutor#0;class#EntityManager#0" expanded="false" />
+                <element signature="method#updateTutor#0;class#EntityManager#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -182,13 +165,12 @@
         <entry file="file://$PROJECT_DIR$/src/Forms/StudentsForm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="method#textBoxListeners#0;class#StudentsForm#0" expanded="false" />
                 <element signature="class#1001:2557" expanded="false" />
                 <element signature="class#2603:2760" expanded="false" />
                 <element signature="class#2804:3139" expanded="false" />
-                <element signature="method#listListener#0;class#StudentsForm#0" expanded="false" />
                 <element signature="method#addEntityButtonFunction#0;class#StudentsForm#0" expanded="false" />
                 <element signature="method#editEntityButtonFunction#0;class#StudentsForm#0" expanded="false" />
                 <element signature="method#windowFocusGainedUpdateList#0;class#StudentsForm#0" expanded="false" />
@@ -198,48 +180,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchStudentForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/SearchStudentForm.java">
+      <file leaf-file-name="Assignment2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/Assignment2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <element signature="method#SearchStudentForm#0;class#SearchStudentForm#0" expanded="false" />
-                <element signature="method#textBoxListeners#0;class#SearchStudentForm#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddUpdateTutorForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/AddUpdateTutorForm.java">
+      <file leaf-file-name="DaySchoolManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/DaySchoolManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
               <folding>
-                <element signature="method#AddUpdateTutorForm#0;class#AddUpdateTutorForm#0" expanded="false" />
-                <element signature="method#AddUpdateTutorForm#1;class#AddUpdateTutorForm#0" expanded="false" />
+                <element signature="method#getDaySchoolByDate#0;class#DaySchoolManager#0" expanded="false" />
+                <element signature="method#getDaySchoolByTheme#0;class#DaySchoolManager#0" expanded="false" />
+                <element signature="method#addDaySchool#0;class#DaySchoolManager#0" expanded="false" />
+                <element signature="method#getSessionsByStudentID#0;class#DaySchoolManager#0" expanded="false" />
+                <element signature="method#RemoveStudentFromAllSessions#0;class#DaySchoolManager#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Form1HelpForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Forms/Form1HelpForm.java">
+      <file leaf-file-name="DaySchool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/DaySchool.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
-                <element signature="class#1794:2025" expanded="false" />
-                <element signature="class#2362:2826" expanded="false" />
-                <element signature="method#doAction#0;class#2362:2826" expanded="false" />
-                <element signature="class#3224:3682" expanded="false" />
-                <element signature="method#doAction#0;class#3224:3682" expanded="false" />
-                <element signature="class#4036:4267" expanded="false" />
-                <element signature="method#doAction#0;class#4036:4267" expanded="false" />
-                <element signature="method#undoAction#0;class#4036:4267" expanded="false" />
-                <element signature="class#4506:4898" expanded="false" />
-                <element signature="method#populateQuestionsList#0;class#Form1HelpForm#0" expanded="false" />
+                <element signature="method#getStudentsFromSession#0;class#DaySchool#0" expanded="false" />
+                <element signature="method#getSessionIDByTime#0;class#DaySchool#0" expanded="false" />
+                <element signature="method#generateSessions#0;class#DaySchool#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/Session.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="method#Session#0;class#Session#0" expanded="false" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#806#807#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -265,16 +257,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DaySchool.java" />
-        <option value="$PROJECT_DIR$/src/Session.java" />
-        <option value="$PROJECT_DIR$/src/EntityManager.java" />
-        <option value="$PROJECT_DIR$/src/StudentForm.java" />
-        <option value="$PROJECT_DIR$/src/Assignment2.java" />
-        <option value="$PROJECT_DIR$/src/Main/Tutor.java" />
-        <option value="$PROJECT_DIR$/src/Forms/AddStudentForm.form" />
-        <option value="$PROJECT_DIR$/src/Forms/AddStudentForm.java" />
-        <option value="$PROJECT_DIR$/src/Forms/AddEditStudentForm.java" />
-        <option value="$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.form" />
         <option value="$PROJECT_DIR$/src/Forms/StudentForm.form" />
         <option value="$PROJECT_DIR$/src/Forms/StudentForm.java" />
         <option value="$PROJECT_DIR$/src/Forms/AddUpdateTutorsForm.java" />
@@ -298,11 +280,8 @@
         <option value="$PROJECT_DIR$/src/Forms/SearchStudentForm.java" />
         <option value="$PROJECT_DIR$/src/Forms/searchSessionForStudentsForm.java" />
         <option value="$PROJECT_DIR$/src/Forms/HelpFramework.java" />
-        <option value="$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java" />
-        <option value="$PROJECT_DIR$/src/Forms/AddUpdateTutorForm.java" />
         <option value="$PROJECT_DIR$/src/Forms/EditEntityFramework.java" />
         <option value="$PROJECT_DIR$/src/Forms/Form1HelpForm.java" />
-        <option value="$PROJECT_DIR$/src/Forms/EntityInspectFramework.java" />
         <option value="$PROJECT_DIR$/src/Forms/Form1.java" />
         <option value="$PROJECT_DIR$/src/Forms/SearchSessionForStudentsForm.java" />
         <option value="$PROJECT_DIR$/assignment2.properties" />
@@ -315,7 +294,20 @@
         <option value="$PROJECT_DIR$/src/Forms/utility/WhiteGreyCellRenderer.java" />
         <option value="$PROJECT_DIR$/src/Forms/TutorsForm.java" />
         <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/Forms/utility/Standardization.java" />
         <option value="$PROJECT_DIR$/src/Forms/MainForm.java" />
+        <option value="$PROJECT_DIR$/src/Forms/EntityInspectFramework.java" />
+        <option value="$PROJECT_DIR$/src/Core/Student.java" />
+        <option value="$PROJECT_DIR$/src/Core/Tutor.java" />
+        <option value="$PROJECT_DIR$/src/Forms/AddUpdateTutorForm.java" />
+        <option value="$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java" />
+        <option value="$PROJECT_DIR$/src/UnitTests.java" />
+        <option value="$PROJECT_DIR$/src/Core/Session.java" />
+        <option value="$PROJECT_DIR$/src/Core/DaySchool.java" />
+        <option value="$PROJECT_DIR$/src/Core/Assignment2.java" />
+        <option value="$PROJECT_DIR$/src/Core/DaySchoolManager.java" />
+        <option value="$PROJECT_DIR$/src/Core/EntityManager.java" />
+        <option value="$PROJECT_DIR$/src/Testing/UnitTests.java" />
       </list>
     </option>
   </component>
@@ -332,10 +324,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="3456" />
-    <option name="height" value="1416" />
+    <option name="x" value="615" />
+    <option name="width" value="2044" />
+    <option name="height" value="1408" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -394,6 +385,50 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainForm" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -521,6 +556,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Testing" />
       <recent name="Forms.utility" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -1149,35 +1185,35 @@
       <workItem from="1460824642684" duration="32000" />
       <workItem from="1461057950853" duration="2813000" />
       <workItem from="1463494275149" duration="1676000" />
-      <workItem from="1464105945549" duration="1248000" />
+      <workItem from="1464105945549" duration="11677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166500000" />
+    <option name="totallyTimeSpent" value="176929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
+    <frame x="615" y="0" width="2044" height="1408" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32618684" sideWeight="0.4774816" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32588598" sideWeight="0.4774816" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22022279" sideWeight="0.5744485" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18606432" sideWeight="0.42555147" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5007704" sideWeight="0.42555147" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114534885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17455621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.397474" sideWeight="0.44898897" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39676425" sideWeight="0.44898897" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1187,6 +1223,34 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969373" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732558" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22022279" sideWeight="0.5744485" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39739662" sideWeight="0.44898897" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32618684" sideWeight="0.4774816" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969373" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22727273" sideWeight="0.42555147" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732558" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17455621" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1208,14 +1272,8 @@
           <properties method="doAction" />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Core/DaySchoolManager.java</url>
-          <line>9</line>
-          <properties />
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="112" />
+      <option name="time" value="125" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1228,25 +1286,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Forms/MainForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="method#MainForm#0;class#MainForm#0" expanded="false" />
-            <element signature="method#removeUpdate#0;class#9360:11785" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,16 +1300,9 @@
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="method#Session#0;class#Session#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1275,8 +1312,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
-            <element signature="method#generateDaySchools#0;class#Assignment2#0" expanded="false" />
-            <element signature="method#generateEntities#0;class#Assignment2#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1293,10 +1329,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
+            <element signature="method#getStudentsFromSession#0;class#DaySchool#0" expanded="false" />
+            <element signature="method#getSessionIDByTime#0;class#DaySchool#0" expanded="false" />
             <element signature="method#generateSessions#0;class#DaySchool#0" expanded="false" />
           </folding>
         </state>
@@ -1329,7 +1363,7 @@
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="11" />
           <folding>
             <element signature="method#MainForm#0;class#MainForm#0" expanded="false" />
-            <element signature="method#removeUpdate#0;class#9360:11785" expanded="false" />
+            <element signature="method#removeUpdate#0;class#9228:11655" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1338,10 +1372,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1351,16 +1382,9 @@
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="method#Session#0;class#Session#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1370,8 +1394,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
           <folding>
-            <element signature="method#generateDaySchools#0;class#Assignment2#0" expanded="false" />
-            <element signature="method#generateEntities#0;class#Assignment2#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1388,10 +1411,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
+            <element signature="method#getStudentsFromSession#0;class#DaySchool#0" expanded="false" />
+            <element signature="method#getSessionIDByTime#0;class#DaySchool#0" expanded="false" />
             <element signature="method#generateSessions#0;class#DaySchool#0" expanded="false" />
           </folding>
         </state>
@@ -1446,17 +1467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/HelpFramework.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Forms/EntityInspectFramework.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/MainForm.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
@@ -1498,13 +1509,6 @@
             <Category>Show library models</Category>
           </Categories>
           <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/HelpFramework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20344289">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1608,55 +1612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/EntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/DaySchool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="method#generateSessions#0;class#DaySchool#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/DaySchoolManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
-          <folding>
-            <element signature="method#Session#0;class#Session#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#1436#1437#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1678,46 +1633,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/Forms/HelpFramework.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/HelpFramework.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Tutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/EditEntityFramework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/EntityInspectFramework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/utility/WhiteGreyCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1730,24 +1657,6 @@
             <element signature="method#populateEntityList#0;class#TutorsForm#0" expanded="false" />
             <element signature="method#textBoxListeners#0;class#TutorsForm#0" expanded="false" />
             <element signature="method#listListener#0;class#TutorsForm#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/StudentsForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="method#textBoxListeners#0;class#StudentsForm#0" expanded="false" />
-            <element signature="class#1001:2557" expanded="false" />
-            <element signature="class#2603:2760" expanded="false" />
-            <element signature="class#2804:3139" expanded="false" />
-            <element signature="method#listListener#0;class#StudentsForm#0" expanded="false" />
-            <element signature="method#addEntityButtonFunction#0;class#StudentsForm#0" expanded="false" />
-            <element signature="method#editEntityButtonFunction#0;class#StudentsForm#0" expanded="false" />
-            <element signature="method#windowFocusGainedUpdateList#0;class#StudentsForm#0" expanded="false" />
-            <element signature="method#arrayContainsInt#0;class#StudentsForm#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1782,10 +1691,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/utility/WhiteGreyCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/utility/Standardization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Forms/AddUpdateTutorForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding>
             <element signature="method#AddUpdateTutorForm#0;class#AddUpdateTutorForm#0" expanded="false" />
             <element signature="method#AddUpdateTutorForm#1;class#AddUpdateTutorForm#0" expanded="false" />
@@ -1793,36 +1728,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java">
+    <entry file="file://$PROJECT_DIR$/src/Core/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="method#mouseClicked#0;class#1018:1815" expanded="false" />
-          </folding>
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/EntityInspectFramework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/EditEntityFramework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.062992126">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Forms/MainForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
             <element signature="method#MainForm#0;class#MainForm#0" expanded="false" />
-            <element signature="method#removeUpdate#0;class#9360:11785" expanded="false" />
+            <element signature="method#removeUpdate#0;class#9228:11655" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/AddUpdateStudentForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/StudentsForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="method#textBoxListeners#0;class#StudentsForm#0" expanded="false" />
+            <element signature="class#1001:2557" expanded="false" />
+            <element signature="class#2603:2760" expanded="false" />
+            <element signature="class#2804:3139" expanded="false" />
+            <element signature="method#addEntityButtonFunction#0;class#StudentsForm#0" expanded="false" />
+            <element signature="method#editEntityButtonFunction#0;class#StudentsForm#0" expanded="false" />
+            <element signature="method#windowFocusGainedUpdateList#0;class#StudentsForm#0" expanded="false" />
+            <element signature="method#arrayContainsInt#0;class#StudentsForm#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/DaySchool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="method#getStudentsFromSession#0;class#DaySchool#0" expanded="false" />
+            <element signature="method#getSessionIDByTime#0;class#DaySchool#0" expanded="false" />
+            <element signature="method#generateSessions#0;class#DaySchool#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Assignment2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17391305">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="method#generateDaySchools#0;class#Assignment2#0" expanded="false" />
-            <element signature="method#generateEntities#0;class#Assignment2#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="method#Session#0;class#Session#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/DaySchoolManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="method#getDaySchoolByDate#0;class#DaySchoolManager#0" expanded="false" />
+            <element signature="method#getDaySchoolByTheme#0;class#DaySchoolManager#0" expanded="false" />
+            <element signature="method#addDaySchool#0;class#DaySchoolManager#0" expanded="false" />
+            <element signature="method#getSessionsByStudentID#0;class#DaySchoolManager#0" expanded="false" />
+            <element signature="method#RemoveStudentFromAllSessions#0;class#DaySchoolManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/EntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+          <folding>
+            <element signature="method#getTutorByID#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#getTutorByName#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#getStudentByName#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#getStudentByID#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#addTutor#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#addUpdateStudent#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#addUpdateTutor#0;class#EntityManager#0" expanded="false" />
+            <element signature="method#updateTutor#0;class#EntityManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Testing/UnitTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CreateNewStudent#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#FindStudentByID#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#AddStudentToSession#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#FindStudentSessions#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#RemoveStudentFromAllSessions#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#CheckStudentCount#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#CheckStudentName#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#CheckStudentAddress#0;class#UnitTests#0" expanded="false" />
+            <element signature="method#CheckStudentSpecialNeedsStatus#0;class#UnitTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Forms/MainForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
   </component>

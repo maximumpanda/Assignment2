@@ -6,11 +6,13 @@ import java.time.LocalTime;
 import java.util.Arrays;
 
 public class DaySchool {
+    public int id;
     public Session[] sessions = new Session[]{};
     private final String theme;
     private final LocalDate date;
 
-    public DaySchool(String theme, LocalDate date) {
+    public DaySchool(int id, String theme, LocalDate date) {
+        this.id = id;
         this.theme = theme;
         this.date = date;
         generateSessions();
