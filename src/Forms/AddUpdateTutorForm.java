@@ -10,7 +10,7 @@ class AddUpdateTutorForm extends EditEntityFramework {
 
     public AddUpdateTutorForm(){
         this.entityDetailsPanel.remove(this.entityIDTextBox);
-        this.entityIDLabel.setText("Tutor ID: T00" + (Assignment2.entityManager.tutors.length + 1));
+        this.entityIDLabel.setText("Tutor ID: T00" + (Assignment2.entityManager.tutors.length));
         setupForm();
         configure();
     }

@@ -10,7 +10,7 @@ class AddUpdateStudentForm extends EditEntityFramework {
 
     public AddUpdateStudentForm(){
         this.entityDetailsPanel.remove(this.entityIDTextBox);
-        this.entityIDLabel.setText("Student ID: S00" + (Assignment2.entityManager.students.length + 1));
+        this.entityIDLabel.setText("Student ID: S00" + (Assignment2.entityManager.students.length));
         setupForm();
     }
 
